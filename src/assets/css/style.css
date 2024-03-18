@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500|Rubik:500,700");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+
+   
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(251, 251, 255);
+    background-image: url("/src/assets/images/education-bg.png");
+    
+    
+    
+}
+p 
+{
+    opacity: 0.8;
+}
+
+
+
+.heroSection {
+    padding: 30px 100px 100px 100px;
+    background-color:rgb(65,34,142);
+    background-image: url("/src/assets/images/leaf-bg.png");
+    height: 85vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    /* padding: 20px; */
+    
+}
+
+.heroSection h2,
+h1,
+h5 {
+    line-height: 4rem;
+}
+
+.heroSection img {
+    margin-left: 100px;
+    width: 90%;
+}
+
+.heroSection h1 {
+    font-size: 46px;
+    font-weight: bold;
+    color:white;
+}
+
+
+
+button {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border:  2px solid black;
+    background-color: white;
+
+
+}
+
+button:hover{
+   
+    border: 2px solid rgb(108, 109, 209);
+    box-shadow: var(--bs-box-shadow) !important;
+}
+
+
+
+
+
+
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+}
+.navbar-brand:hover{
+    color: white;
+    font-weight: bold;
+}
+
+
+.MySkilSection {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+
+.MySkillSection h1 , h2,h3,h4,h5{
+    color: #034077;
+    font-weight: bold;
+}
+
+/* .mySkill img {
+    width: 14rem;
+} */
+
+.mySkill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10rem;
+    
+}
+
+
+
+
+.myProject .card {
+    background-color: rgb(251, 251, 255);
+}
+
+.MyProjectSection
+{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.MyProjectSection h1,h2,h3,h4{
+    color: #034077;
+    font-weight: bold;
+}
+
+.myProject
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem; 
+}
+
+
+.heroSection2 {
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
+.heroSection2 img {
+    width: 450px;
+}
+
+.heroSection2 h1 {
+    font-size: 35px;
+    font-weight: 800;
+    color: #034077;
+    
+}
+
+.heroSection2 .hero2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+
+
+
+/* Float Shadow */
+.hvr-float-shadow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.hvr-float-shadow:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    /* W3C */
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform, opacity;
+    transition-property: transform, opacity;
+}
+
+.hvr-float-shadow:hover,
+.hvr-float-shadow:focus,
+.hvr-float-shadow:active {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    /* move the element up by 5px */
+}
+
+.hvr-float-shadow:hover:before,
+.hvr-float-shadow:focus:before,
+.hvr-float-shadow:active:before {
+    opacity: 1;
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+    /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+
+
+/* Underline From Left */
+.hvr-underline-from-left {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .hvr-underline-from-left:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: white;
+    height: 4px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+    right: 0;
+  }
+
+
+
+
+/* Grow Shadow */
+.hvr-grow-shadow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+  }
+  .hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  .Contact h1{
+    font-weight: bold;
+    color: #034077;
+    font-size: 50px;
+  }
+
+  .Contact p
+  {
+    line-height: 2rem;
+  }
+
+
+  .Portfoilo h1
+  {
+    font-weight: bold;
+    color: #034077;
+    font-size: 55px;
+  }
+
+  .Portfoilo p
+  {
+    line-height: 2rem;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 576px) {
+
+    .heroSection h1 {
+        font-size: 35px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .heroSection {
+
+        background-color:rgb(65,34,142) !important;
+        background-image: url("/src/assets/images/leaf-bg.png") !important;
+        height: 136vh !important;
+        width: 100% !important;
+        /* background-size: cover !important;
+        background-position: top 25% right 0 !important; */
+    }
+
+    .heroSection img {
+        margin-left: -7px;
+        width: 95%;
+        margin-top: 50px;
+    }
+
+    .heroSection2 img {
+        margin-left: 7px;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .heroSection2 .hero2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+
+    .heroSection2 {
+        padding-left: 6px;
+        padding-right: 73px;
+    }
+    .heroSection h2, h1, h5 {
+        line-height: 2.5rem;
+    }
+    
+
+}
